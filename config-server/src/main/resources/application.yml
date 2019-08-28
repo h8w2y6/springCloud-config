@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/h8w2y6/config.git
+          username: h8w2y6
+          password: h8w2y6,x8a2l6
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8026/eureka
